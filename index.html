@@ -286,12 +286,18 @@
         }
 
         footer {
-            background: var(--secondary-color);
+            background: rgba(58, 12, 163, 0.8);
             color: white;
             padding: 60px 0;
             text-align: center;
             position: relative;
             overflow: hidden;
+            backdrop-filter: blur(8px);
+            transition: background-color 0.3s ease;
+        }
+
+        footer:hover {
+            background: rgba(58, 12, 163, 0.95);
         }
 
         footer::before {
@@ -302,6 +308,16 @@
             right: 0;
             height: 4px;
             background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2), var(--gradient-3));
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
         }
 
         @keyframes logoSpin {
@@ -372,7 +388,7 @@
 </head>
 <body>
     <div class="loading-animation">
-        <img src="https://raw.githubusercontent.com/Angelyze/FreeAIToolsWiki/main/FreeAIWiki.png" alt="Loading..." style="width: 500px; height: 490px;">
+        <img src="https://raw.githubusercontent.com/Angelyze/FreeAIToolsWiki/main/FreeAIWiki.png" alt="Loading..." style="width: 50px; height: 50px;">
     </div>
 
     <header>
@@ -466,7 +482,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 FreeAITools.Wiki - Your Guide to Free AI Tools</p>
+            <p>© 2025 <a href="https://freeaitools.wiki">FreeAITools.Wiki</a> - Your Wiki Guide to Free AI Tools</p>
         </div>
     </footer>
 
